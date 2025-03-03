@@ -20,26 +20,40 @@
 <li><a href = "https://www.rastonlab.com/untitled-c14ce">About the VFD</a></li>
 <hr/>
 <p><br></p>
-<label for=  "speed"><span style="font-family: Verdana, Geneva, sans-serif;"><span style="font-size: 18px;">Set speed (min = 5, max = 9000, muliple of 5): </label>
-<input
-	id = "speed"
-	type = "number"
-	name = "speed"
-	step = "5"
-	min = "5"
-	max = "9000"
-	required />
+<form>
+	<div>
+		<label for=  "speed"><span style="font-family: Verdana, Geneva, sans-serif;"><span style="font-size: 18px;">Set speed (min = 5, max = 9000, 		muliple of 5): </label>
+		<input
+			id = "speed"
+			type = "number"
+			name = "speed"
+			step = "5"
+			min = "5"
+			max = "9000"
+			required 
+		/>
+		<span class = "validity"></span>
+	</div>
+	<div>
+		<input type= "submit" />
+	</div>
 
-<input type= "submit" />
 <p><br></p>
-<label for=  "direction"><span style="font-family: Verdana, Geneva, sans-serif;"><span style="font-size: 18px;">Set direction (clockwise = cw, counter clockwide = ccw): </label>
-<input
-	id = "direction"
-	type = "text"
-	name = "direction"
-	required />
 
-<input type= "submit" />
+	<div>
+		<label for=  "direction"><span style="font-family: Verdana, Geneva, sans-serif;"><span style="font-size: 18px;">Set direction (clockwise = 		cw, counter clockwide = ccw): </label>
+		<input
+			id = "direction"
+			type = "text"
+			name = "direction"
+			required 
+		/>
+
+		<span class = "validity"></span>
+	</div>
+	<div>
+		<input type= "submit" />
+	</div>
 
 <p><br></p>
 <label for=  "speed"><span style="font-family: Verdana, Geneva, sans-serif;"><span style="font-size: 18px;">Motor (on/off): </label>
