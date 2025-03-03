@@ -10,19 +10,35 @@
 <body>
 <h2><span style="font-family: Verdana, Geneva, sans-serif;">Vortex Fluidic Device Control</h2>
 <p><br></p>
-<label for=  "speed"><span style="font-family: Verdana, Geneva, sans-serif;"><span style="font-size: 18px;">Set speed (min = 5, max = 9000): </label>
+<label for=  "speed"><span style="font-family: Verdana, Geneva, sans-serif;"><span style="font-size: 18px;">Set speed (min = 5, max = 9000, muliple of 5): </label>
 <input
 	id = "speed"
 	type = "number"
 	name = "speed"
-	step = "10"
+	step = "5"
 	min = "5"
 	max = "9000"
 	required />
 
 <input type= "submit" />
+<p><br></p>
+<label for=  "direction"><span style="font-family: Verdana, Geneva, sans-serif;"><span style="font-size: 18px;">Set direction (clockwise = cw, counter clockwide = ccw): </label>
+<input
+	id = "direction"
+	type = "text"
+	name = "direction"
+	required />
 
-<span style="font-family: Verdana, Geneva, sans-serif;"><span style="font-size: 18px;">Rotation Speed =&nbsp;</span></span></p>
-<p><span style="font-family: Verdana, Geneva, sans-serif; font-size: 18px;">Direction =&nbsp;</span></p>
-<p><span style="font-family: Verdana, Geneva, sans-serif; font-size: 18px;">Motor =&nbsp;</span></p>
-<p><span style="font-family: Verdana, Geneva, sans-serif; font-size: 18px;"><p><br></p>
+<input type= "submit" />
+
+<p><br></p>
+<label for=  "speed"><span style="font-family: Verdana, Geneva, sans-serif;"><span style="font-size: 18px;">Motor (on/off): </label>
+<input
+	id = "motor"
+	type = "text"
+	name = "motor"
+	required />
+
+<input type= "submit" />
+
+
