@@ -5,10 +5,10 @@
 <head>
 <meta charset = "UTF-8">
 
-<script language= "JavaScript">
+<script type= "text/JavaScript">
 	function showSpeed() {
-		document.getElementById('display_speed').innerHTML =
-			document.getElementByID("speed").value;
+		var speed = document.getElementByID("speed").value;
+		display_speed.innerHTML = speed;
 	}
 
 	function showDir() {
@@ -45,13 +45,13 @@
 			max = "9000"
 			required 
 		/>
+		<input type = "button" onclick= "showSpeed()" value= "submit" />
 	</div>
 </form>
 
-<input type= "submit" onclick="showSpeed();"><br />
 	
 <label for=  "setspeed"><span style="font-family: Verdana, Geneva, sans-serif;"><span style="font-size: 18px;">Current Speed= </label>
-<p>Current Speed = <span id = "display_speed"></span></p>
+<p><span style="font-family: Verdana, Geneva, sans-serif;"><span style="font-size: 18px;">Current Speed = <span id = "display_speed"></span></p>
 
 	<div>
 		<label for=  "direction"><span style="font-family: Verdana, Geneva, sans-serif;"><span style="font-size: 18px;">Set direction (clockwise = 		cw, counter clockwide = ccw): </label>
