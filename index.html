@@ -4,6 +4,19 @@
 
 <head>
 <meta charset = "UTF-8">
+
+<script language= "JavaScript">
+	function showSpeed() {
+		document.getElementById('display_speed').innerHTML =
+			document.getElementByID("speed").value;
+	}
+
+	function showDir() {
+		document.getElementById('display_dir').innerHTML =
+			document.getElementByID("direction").value;
+	}
+</script>
+
 <title>VFD Control</title>
 <style>
 	html{
@@ -48,9 +61,15 @@
 		<span class = "validity"></span>
 		<input type= "submit" />
 	</div>
+</form>
 
 <p><br></p>
 
+<label for=  "setspeed"><span style="font-family: Verdana, Geneva, sans-serif;"><span style="font-size: 18px;">Current Speed= </label>
+<p><span id = 'display_speed', style="font-family: Verdana, Geneva, sans-serif;"><span style="font-size: 18px;"></span></p>
+
+<label for=  "setdir"><span style="font-family: Verdana, Geneva, sans-serif;"><span style="font-size: 18px;">Current Direction= </label>
+<p><span id = 'display_dir', style="font-family: Verdana, Geneva, sans-serif;"><span style="font-size: 18px;"></span></p>
 
 <p><span style="font-family: Verdana, Geneva, sans-serif;"><span style="font-size: 18px;">Current Speed = currentSpeed()</span></p>
 <p><span style="font-family: Verdana, Geneva, sans-serif;"><span style="font-size: 18px;">Current Direction = input value</span></p>
