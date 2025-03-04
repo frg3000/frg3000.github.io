@@ -42,7 +42,7 @@
 			id = "direction"
 			type = "text"
 			name = "direction"
-			required 
+			required
 		/>
 
 		<span class = "validity"></span>
@@ -51,8 +51,9 @@
 
 <p><br></p>
 <script>
-	function currentSpeed(){
-		document.getElementById("speed").innerHTML = f("direction")
+	let s = currentSpeed(id = "speed")
+	function currentSpeed(a){
+		return(a)
 	}
 </script>
 
