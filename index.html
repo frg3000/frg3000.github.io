@@ -7,13 +7,13 @@
 
 <script type= "text/JavaScript">
 	function showSpeed() {
-		var speed = document.getElementByID("speed").value;
+		var speed = document.getElementById("speed").value;
 		display_speed.innerHTML = speed;
 	}
 
 	function showDir() {
-		document.getElementById('display_dir').innerHTML =
-			document.getElementByID("direction").value;
+		var dir = document.getElementById("direction").value;
+		display_speed.innerHTML = direction;
 	}
 </script>
 
@@ -45,12 +45,11 @@
 			max = "9000"
 			required 
 		/>
-		<input type = "button" onclick= "showSpeed()" value= "submit" />
+		<input type = "submit" onclick= "showSpeed()" value= "Submit" />
 	</div>
 </form>
 
-	
-<label for=  "setspeed"><span style="font-family: Verdana, Geneva, sans-serif;"><span style="font-size: 18px;">Current Speed= </label>
+
 <p><span style="font-family: Verdana, Geneva, sans-serif;"><span style="font-size: 18px;">Current Speed = <span id = "display_speed"></span></p>
 
 	<div>
